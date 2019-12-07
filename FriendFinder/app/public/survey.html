@@ -21,15 +21,144 @@
             </div>
         </div>
         </div>
-
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bestMatch">
-            Submit
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Reservation Page -->
+                <div class="card">
+                    <div class="card-body">
+                        <form role="form">
+                            <h4>Name and Photo</h4>
+                            <div class="form-group">
+                                <label for="reserve-name">Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="reserve-phone">Photo</label>
+                                <input type="text" class="form-control" id="photo">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <h4>Question 1</h4>
+                                <label for="reserve-email">Email</label>
+                                <select class="form-control" id="q1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Question 2</h4>
+                                <label for="reserve-unique-id">Unique ID</label>
+                                <select class="form-control" id="q2">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Question 3</h4>
+                                <label for="reserve-unique-id">Unique ID</label>
+                                <select class="form-control" id="q3">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Question 4</h4>
+                                <label for="reserve-unique-id">Unique ID</label>
+                                <select class="form-control" id="q4">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Question 5</h4>
+                                <label for="reserve-unique-id">Unique ID</label>
+                                <select class="form-control" id="q5">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Question 6</h4>
+                                <label for="reserve-unique-id">Unique ID</label>
+                                <select class="form-control" id="q6">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Question 7</h4>
+                                <label for="reserve-unique-id">Unique ID</label>
+                                <select class="form-control" id="q7">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Question 8</h4>
+                                <label for="reserve-unique-id">Unique ID</label>
+                                <select class="form-control" id="q8">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Question 9</h4>
+                                <label for="reserve-unique-id">Unique ID</label>
+                                <select class="form-control" id="q9">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Question 10</h4>
+                                <label for="reserve-unique-id">Unique ID</label>
+                                <select class="form-control" id="q10">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit" data-toggle="modal"
+                                data-target="#bestMatch">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         </button>
         <!-- The Modal -->
         <div class="modal fade" id="bestMatch">
             <div class="modal-dialog">
                 <div class="modal-content">
-
                     <!-- Modal Header -->
                     <div class="modal-header">
                         <h4 class="modal-title">Best Match</h4>
@@ -38,7 +167,7 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        test body data
+
                     </div>
 
                     <!-- Modal footer -->
@@ -52,23 +181,21 @@
         <script type="text/javascript">
             $(".submit").on("click", function (event) {
                 event.preventDefault();
-
                 // Here we grab the form elements
                 var newUser = {
-                    name: $("#reserve-name").val().trim(),
-                    photo: $("#reserve-phone").val().trim(),
-                    score: [$("#reserve-email").val().trim(),
-                    $("#reserve-email").val().trim(),
-                    $("#reserve-email").val().trim(),
-                    $("#reserve-email").val().trim(),
-                    $("#reserve-email").val().trim(),
-                    $("#reserve-email").val().trim(),
-                    $("#reserve-email").val().trim(),
-                    $("#reserve-email").val().trim(),
-                    $("#reserve-email").val().trim(),
-                    $("#reserve-email").val().trim()]
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    score: [$("#q1").val().trim(),
+                    $("#q2").val().trim(),
+                    $("#q3").val().trim(),
+                    $("#q4").val().trim(),
+                    $("#q5").val().trim(),
+                    $("#q6").val().trim(),
+                    $("#q7").val().trim(),
+                    $("#q8").val().trim(),
+                    $("#q9").val().trim(),
+                    $("#q10").val().trim()]
                 };
-
                 console.log(newUser);
 
                 // This line is the magic. It"s very similar to the standard ajax function we used.
@@ -78,18 +205,26 @@
 
                 $.post("/api/friends", newUser,
                     function (data) {
-
                         // If a table is available... tell user they are booked.
                         if (data) {
                             alert("Yay! Your survey results have been submitted!");
                         }
-
+                        else {
+                            alert("Your survey results were not submitted!");
+                        }
                         // Clear the form when submitting
-                        $("#reserve-name").val("");
-                        $("#reserve-phone").val("");
-                        $("#reserve-email").val("");
-                        $("#reserve-unique-id").val("");
-
+                        $("#name").val("");
+                        $("#photo").val("");
+                        $("#q1").val("");
+                        $("#q2").val("");
+                        $("#q3").val("");
+                        $("#q4").val("");
+                        $("#q5").val("");
+                        $("#q6").val("");
+                        $("#q7").val("");
+                        $("#q8").val("");
+                        $("#q9").val("");
+                        $("#q10").val("");
                     });
             });
         </script>
