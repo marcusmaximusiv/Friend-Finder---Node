@@ -21,38 +21,10 @@
             </div>
         </div>
         </div>
-        <form>
-            <h2>Question 1</h2>
-            <p>Do you feel you are Likeable? (5 for strongly agree and 1 for strongly disagrees)</p>
-            <br>
-            <h2>Question 2</h2>
-            <p>Do you feel you can handle Conflict? (5 for strongly agree and 1 for strongly disagrees) </p>
-            <br>
-            <h2>Question 3</h2>
-            <p>From 1-5 how important do you feel trust is?</p>
-            <br>
-            <h2>Question 4</h2>
-            <p>From 1-5 how important do you feel connection is?</p>
-            <br>
-            <h2>Question 5</h2>
-            <p>From 1-5 how important do you feel argument is in a relationship?</p>
-            <br>
-            <h2>Question 6</h2>
-            <p>From 1-5 do you feel you are ready to find someone?</p>
-            <br>
-            <h2>Question 7</h2>
-            <p>From 1-5 how hectic is your life?</p>
-            <br>
-            <h2>Question 7</h2>
-            <p>From 1-5 how hectic is your life?</p>
-            <!--Submission button for the Survey-->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bestMatch">
-                Submit
-            </button>
-        </form>
 
-
-
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bestMatch">
+            Submit
+        </button>
         <!-- The Modal -->
         <div class="modal fade" id="bestMatch">
             <div class="modal-dialog">
@@ -77,7 +49,50 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            $(".submit").on("click", function (event) {
+                event.preventDefault();
 
+                // Here we grab the form elements
+                var newUser = {
+                    name: $("#reserve-name").val().trim(),
+                    photo: $("#reserve-phone").val().trim(),
+                    score: [$("#reserve-email").val().trim(),
+                    $("#reserve-email").val().trim(),
+                    $("#reserve-email").val().trim(),
+                    $("#reserve-email").val().trim(),
+                    $("#reserve-email").val().trim(),
+                    $("#reserve-email").val().trim(),
+                    $("#reserve-email").val().trim(),
+                    $("#reserve-email").val().trim(),
+                    $("#reserve-email").val().trim(),
+                    $("#reserve-email").val().trim()]
+                };
+
+                console.log(newUser);
+
+                // This line is the magic. It"s very similar to the standard ajax function we used.
+                // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+                // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+                // depending on if a tables is available or not.
+
+                $.post("/api/friends", newUser,
+                    function (data) {
+
+                        // If a table is available... tell user they are booked.
+                        if (data) {
+                            alert("Yay! Your survey results have been submitted!");
+                        }
+
+                        // Clear the form when submitting
+                        $("#reserve-name").val("");
+                        $("#reserve-phone").val("");
+                        $("#reserve-email").val("");
+                        $("#reserve-unique-id").val("");
+
+                    });
+            });
+        </script>
         </div>
 </body>
 
