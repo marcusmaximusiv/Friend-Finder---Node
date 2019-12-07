@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder Survey</title>
+</head>
+
+<body>
+    <!--Survey Form that user fills out-->
+    <div="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1>Friend Finder</h1>
+            </div>
+        </div>
+        </div>
+        <form>
+            <h2>Question 1</h2>
+            <p>Do you feel you are Likeable? (5 for strongly agree and 1 for strongly disagrees)</p>
+            <br>
+            <h2>Question 2</h2>
+            <p>Do you feel you can handle Conflict? (5 for strongly agree and 1 for strongly disagrees) </p>
+            <br>
+            <h2>Question 3</h2>
+            <p>From 1-5 how important do you feel trust is?</p>
+            <br>
+            <h2>Question 4</h2>
+            <p>From 1-5 how important do you feel connection is?</p>
+            <br>
+            <h2>Question 5</h2>
+            <p>From 1-5 how important do you feel argument is in a relationship?</p>
+            <br>
+            <h2>Question 6</h2>
+            <p>From 1-5 do you feel you are ready to find someone?</p>
+            <br>
+            <h2>Question 7</h2>
+            <p>From 1-5 how hectic is your life?</p>
+            <!--Submission button for the Survey-->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bestMatch">
+                Submit
+            </button>
+        </form>
+
+
+
+        <!-- The Modal -->
+        <div class="modal fade" id="bestMatch">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Best Match</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        test body data
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+</body>
+
+</html>
