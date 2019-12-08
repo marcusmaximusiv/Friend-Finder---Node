@@ -1,5 +1,20 @@
 # Friend-Finder---Node
+_______________________
+What has been completed
+_______________________
 
+For the most part the application has been complete. The home page works perfectly and the survey pulls up once you start a connection. All of the files are nested as intended and are using the express and path classes along with the apiRoutes, htmlRoutes, and Server.js being setup correctly. All pages run as intended and the users entries in the surveys are being recorded. The submit button also pops up the modal showing the results of the survey and the information the user enters is console.logged to their terminal. Even the database updates in real time on the console.log. The friendds.js is also formatted correctly as well. 
+
+_______________________
+What has not be completed
+_______________________
+
+What hasn't been completed for this homework is the testing of the total difference and ensuring that a match returns to the user. The other thing that hasn't been completed is how to display that match in the modal-body class for the modal button that pops up once someone clicks submit for the survey entries. I am also still working on deploying the app to heroku so will provide that link once i have done the heroku deploy.
+
+
+_______________________
+Original Homework instructions
+_______________________
 1. Your survey should have 10 questions of your choosing. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
 
 2. Your `server.js` file should require the basic npm packages we've used in class: `express` and `path`. -COMPLETE
